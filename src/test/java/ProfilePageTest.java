@@ -30,8 +30,7 @@ public class ProfilePageTest extends BaseClass {
 
     @AfterMethod
     public void tearDown() {
-
-        //driver.quit();
+        driver.quit();
     }
 }
 

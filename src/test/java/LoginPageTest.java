@@ -11,11 +11,6 @@ public class LoginPageTest extends BaseClass {
     LoginPage loginPage;
     ProfilePage profilePage;
 
-
-    /*WelcomePage welcomePage;
-    ForgottPasswordPage forgottPasswordPage;
-    String sheetName = "loginTestData";*/
-
     public LoginPageTest() {
         super();
     }
@@ -37,18 +32,6 @@ public class LoginPageTest extends BaseClass {
     public void loginTest() {
         profilePage = loginPage.login();
     }
-   /* @DataProvider
-    public Object[][] getLoginTestdata() {
-        return TestUtil.getTestData(sheetName);
-    }
-    @Test(priority = 2, dataProvider = "getLoginTestdata")
-    public void loginTest(String username, String password) {
-        welcomePage = loginPage.login(username, password);
-    }
-    @Test(priority = 3)
-    public void forgottPasswordTest() {
-        forgottPasswordPage = loginPage.forgottPassword();
-    }*/
 
     @AfterMethod
     public void tearDown() {
